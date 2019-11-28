@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-model</title>
+</head>
+<body>
+
+ <div id="app">
+
+     <input type="text" v-model="msg"/>
+     <!--"msg"-->
+
+     <h1>{{msg}}</h1>
+
+
+ </div>
+
+ <!--使用vue进行操作-->
+
+<!--1、导入vue.js-->
+ <script src="js/vue.js"></script>
+<!--2、编写vue的实例-->
+ <script>
+
+     var  vm = new Vue({
+         el:'#app',
+         data:{
+             msg : '原始数据'
+         }
+     });
+
+ </script>
+
+
+
+</body>
+</html>
